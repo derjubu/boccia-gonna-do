@@ -2,3 +2,7 @@
   margin-inline: var(--padding-inline);
   font-size: var(--font-size-800);
 }
+
+.h1Class:has(+ div) {
+  margin-inline: 0;
+}
