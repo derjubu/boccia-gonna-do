@@ -1,0 +1,29 @@
+@import '../../helpers/variables.css';
+
+.headerContainer {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-navi);
+  font-size: var(--font-size-600);
+  color: var(--font-color-white);
+  border-bottom: 2px solid #8a4baf;
+  padding-block: 1rem;
+  padding-inline: var(--padding-inline);
+}
+
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  min-width: 10vw;
+}
+
+.navigationLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigationLogo {
+  font-size: var(--font-size-700);
+}

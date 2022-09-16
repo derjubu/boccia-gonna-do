@@ -1,0 +1,4 @@
+.mainClass {
+  margin-inline: var(--padding-inline);
+  font-size: var(--font-size-500);
+}
