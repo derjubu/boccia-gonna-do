@@ -1,0 +1,16 @@
+:root {
+  --font-color-white: #f8f9fa;
+
+  --font-size-400: 1rem;
+  --font-size-500: 1.25rem;
+  --font-size-600: 1.5rem;
+  --font-size-700: 1.75rem;
+  --font-size-800: 2rem;
+
+  --background-navi: #11081f;
+  --background-main: #11081f;
+
+  --hightlight-color-400: #8a4baf;
+
+  --padding-inline: calc(10vw - 0.5rem);
+}

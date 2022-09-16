@@ -1,10 +1,10 @@
 import * as React from 'react'
 import Layout from '../components/layout/layout'
 
-export default function Index() {
+export default function About() {
   return (
-    <Layout title="Hello">
-      <p>This is a text</p>
+    <Layout title="About">
+      <p>This is a text for About</p>
     </Layout>
   )
 }
