@@ -1,8 +1,7 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
 import Layout from '../../components/layout/layout'
-import GatsbyLink from 'gatsby-link'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import TeamMemberCard from '../../components/teamMemberCard/teamMemberCard'
 
 export const getAllTeamMembers = graphql`
   query {
@@ -25,20 +24,12 @@ export default function Hidden(data: any) {
   const allTeamMembers = data.data.allMdx
 
   return (
-    <Layout title="Hello">
+    <Layout title="Our Team">
       <>
-        <p>This is a hidden page</p>
+        <p>This is our excellent Team</p>
         <ul>
           {allTeamMembers.nodes.map((node: any) => (
-            <li>
-              <GatsbyLink to={`/team/${node.frontmatter.title.toLowerCase()}`}>
-                {node.frontmatter.title}
-                <GatsbyImage
-                  alt={'This is ' + node.frontmatter.title}
-                  image={getImage(node.frontmatter.hero_image)!}
-                />
-              </GatsbyLink>
-            </li>
+            <TeamMemberCard data={node} />
           ))}
         </ul>
       </>

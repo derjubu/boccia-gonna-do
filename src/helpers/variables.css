@@ -1,7 +1,7 @@
 :root {
-  --font-color-navi: #f8f9fa;
-  --font-color-hover: #11081f;
-  --font-color-main: #f8f9fa;
+  --font-color-navi: #1d1d1d;
+  --font-color-hover: #cfced1;
+  --font-color-main: #1d1d1d;
 
   --font-size-400: 1rem;
   --font-size-500: 1.25rem;
@@ -10,9 +10,9 @@
   --font-size-800: 2rem;
   --font-size-900: 3rem;
 
-  --background-navi: #11081f;
-  --background-navi-hover: #f8f9fa;
-  --background-main: #11081f;
+  --background-navi: #cfced1;
+  --background-navi-hover: #1d1d1d;
+  --background-main: #cfced1;
 
   --hightlight-color-400: #8a4baf;
 
