@@ -7,7 +7,7 @@
   background-color: var(--background-navi);
   font-size: var(--font-size-600);
   color: var(--font-color-navi);
-  border-bottom: 2px solid #8a4baf;
+  border-bottom: 2px solid var(--hightlight-color-400);
   padding-block: 1rem;
   padding-inline: var(--padding-inline);
 }
