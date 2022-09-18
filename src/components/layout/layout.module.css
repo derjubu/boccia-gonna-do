@@ -31,6 +31,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: sans-serif;
+  background-color: var(--background-main);
+  color: var(--font-color-main);
 }
 /*
     6. Improve media defaults

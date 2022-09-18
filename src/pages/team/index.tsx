@@ -2,6 +2,7 @@ import { graphql } from 'gatsby'
 import * as React from 'react'
 import Layout from '../../components/layout/layout'
 import GatsbyLink from 'gatsby-link'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 export const getAllTeamMembers = graphql`
   query {
@@ -32,6 +33,10 @@ export default function Hidden(data: any) {
             <li>
               <GatsbyLink to={`/team/${node.frontmatter.title.toLowerCase()}`}>
                 {node.frontmatter.title}
+                <GatsbyImage
+                  alt={'This is ' + node.frontmatter.title}
+                  image={getImage(node.frontmatter.hero_image)!}
+                />
               </GatsbyLink>
             </li>
           ))}
