@@ -1,13 +1,16 @@
 :root {
-  --font-color-white: #f8f9fa;
+  --font-color-navi: #f8f9fa;
+  --font-color-hover: #11081f;
 
   --font-size-400: 1rem;
   --font-size-500: 1.25rem;
   --font-size-600: 1.5rem;
   --font-size-700: 1.75rem;
   --font-size-800: 2rem;
+  --font-size-900: 3rem;
 
   --background-navi: #11081f;
+  --background-navi-hover: #f8f9fa;
   --background-main: #11081f;
 
   --hightlight-color-400: #8a4baf;

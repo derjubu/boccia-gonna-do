@@ -71,3 +71,22 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+h1 {
+  margin-block: 1rem;
+}
+
+h2 {
+  margin-block: 1rem;
+}

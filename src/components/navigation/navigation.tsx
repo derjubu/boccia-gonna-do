@@ -12,8 +12,8 @@ export default function Navigation(): JSX.Element {
         <GatsbyLink to="/team" className={styles.navigationLink}>
           Team
         </GatsbyLink>
-        <GatsbyLink to="/about" className={styles.navigationLink}>
-          About
+        <GatsbyLink to="/contact" className={styles.navigationLink}>
+          Contact
         </GatsbyLink>
       </nav>
     </header>

@@ -5,7 +5,7 @@ import GatsbyLink from 'gatsby-link'
 
 export const getAllTeamMembers = graphql`
   query {
-    allMdx {
+    allMdx(sort: { fields: frontmatter___title, order: ASC }) {
       nodes {
         frontmatter {
           title

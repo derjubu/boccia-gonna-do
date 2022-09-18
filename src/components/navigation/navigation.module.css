@@ -6,7 +6,7 @@
   justify-content: space-between;
   background-color: var(--background-navi);
   font-size: var(--font-size-600);
-  color: var(--font-color-white);
+  color: var(--font-color-navi);
   border-bottom: 2px solid #8a4baf;
   padding-block: 1rem;
   padding-inline: var(--padding-inline);
@@ -20,8 +20,15 @@
 }
 
 .navigationLink {
+  padding-inline: 1rem;
   text-decoration: none;
   color: inherit;
+}
+
+.navigationLink:hover {
+  color: var(--font-color-hover);
+  background-color: var(--background-navi-hover);
+  border-radius: 1rem;
 }
 
 .navigationLogo {
