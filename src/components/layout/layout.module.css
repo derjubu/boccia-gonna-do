@@ -96,3 +96,7 @@ h2 {
 p {
   margin-block: 0.5rem;
 }
+
+:root {
+  overflow-x: hidden;
+}
