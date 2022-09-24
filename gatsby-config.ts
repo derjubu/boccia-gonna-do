@@ -11,7 +11,6 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-image',
-    'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -29,6 +28,12 @@ const config: GatsbyConfig = {
         path: `${__dirname}/team`,
       },
       __key: 'team',
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
     },
   ],
 }

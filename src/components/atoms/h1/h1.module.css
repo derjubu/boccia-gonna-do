@@ -1,6 +1,6 @@
 .h1Class {
   margin-inline: var(--padding-inline);
-  font-size: var(--font-size-800);
+  font-size: var(--font-size-900);
 }
 
 .h1Class:has(+ div) {
