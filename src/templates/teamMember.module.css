@@ -1,0 +1,62 @@
+.teamMemberDetail h1 {
+  background: none;
+  display: inline-block;
+  position: relative;
+}
+
+.teamMemberDetail h1:before {
+  content: '';
+  position: absolute;
+  border-bottom: 5px solid var(--hightlight-color-400);
+  bottom: 0;
+  left: 40%;
+  height: 5px;
+  width: 75%;
+}
+
+.image {
+  display: flex;
+  background-color: var(--background-card);
+  color: var(--font-color-card);
+  padding: 0;
+  border-radius: 2rem;
+  max-width: 25vw;
+  min-width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-block: 1rem;
+  margin-inline: auto;
+}
+
+.teamMemberDetail main ul {
+  padding: 0;
+}
+
+.teamMemberDetail main li {
+  list-style-type: none;
+  padding-left: 2rem;
+}
+
+.teamMemberDetail main li::before {
+  content: '🌈';
+  padding-right: 6px;
+  margin-left: -2rem;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .image {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+}

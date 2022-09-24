@@ -12,6 +12,8 @@
   --font-size-900: 3rem;
 
   --background-navi: #dad6d6;
+  --background-navi-solid: rgba(30, 187, 163, 1);
+  --background-navi-darken-main: rgba(29, 29, 29 0.6);
   --background-navi-hover: #1d1d1d;
   --background-main: #dad6d6;
   --background-card: rgba(30, 187, 163, 0.4);

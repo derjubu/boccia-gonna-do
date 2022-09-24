@@ -17,12 +17,86 @@
   justify-content: space-between;
   column-gap: 1rem;
   min-width: 10vw;
+  position: relative;
+}
+
+.navButton {
+  position: sticky;
+  right: 1.5rem;
+  font-size: var(--font-size-800);
+  line-height: 36px;
+  z-index: 20;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.animationBurger {
+  opacity: 0;
+}
+
+.burger {
+  transform: rotate(90deg);
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.menuOpen {
+  transform: rotate(-180deg);
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.menuClosed {
+  transform: rotate(-90deg);
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.menuNav {
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  padding-top: 5rem;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  max-width: fit-content;
+}
+
+.showNav {
+  width: 100%;
+  background-color: var(--background-navi-solid);
+  padding-inline: 1em;
+  padding-bottom: 1em;
+}
+
+.navigationContainer > ul > li {
+  padding: 0;
 }
 
 .navigationLink {
-  padding-inline: 1rem;
+  display: block;
   text-decoration: none;
   color: inherit;
+  padding-inline: 1rem;
+  margin-block: 2rem;
+}
+
+.navHomeLink {
+  display: block;
+  text-decoration: none;
+  color: var(--font-color-navi);
+  padding-left: 0;
+  margin: 0;
 }
 
 .navigationLink:hover {
@@ -31,6 +105,27 @@
   border-radius: 1rem;
 }
 
-.navigationLogo {
-  font-size: var(--font-size-700);
+.navHomeLink:hover {
+  color: var(--font-color-navi);
+  background: none;
+}
+
+@media screen and (min-width: 992px) {
+  .navButton {
+    display: none;
+  }
+
+  .menuNav {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    height: fit-content;
+    width: 100%;
+    max-width: fit-content;
+    padding-top: 0;
+  }
+
+  .navigationLink {
+    margin-block: 0;
+  }
 }

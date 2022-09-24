@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby'
 import * as React from 'react'
-import Layout from '../../components/layout/layout'
-import TeamMemberCard from '../../components/teamMemberCard/teamMemberCard'
-import TeamMemberList from '../../components/teamMemberList/teamMemberList'
+import Layout from '../components/layout/layout'
+import TeamMemberCard from '../components/teamMemberCard/teamMemberCard'
+import TeamMemberList from '../components/teamMemberList/teamMemberList'
 
 export const getAllTeamMembers = graphql`
   query {
@@ -12,7 +12,10 @@ export const getAllTeamMembers = graphql`
           title
           hero_image {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                layout: CONSTRAINED
+                transformOptions: { fit: COVER }
+              )
             }
           }
         }

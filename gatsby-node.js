@@ -1,4 +1,5 @@
 const path = require('path')
+const memberTemplate = path.resolve(`./src/templates/teamMember.tsx`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
@@ -33,7 +34,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       // like slugify to create a slug
       path: `team/${node.frontmatter.slug.toLowerCase()}`,
       // Provide the path to the MDX content file so webpack can pick it up and transform it into JSX
-      component: node.internal.contentFilePath,
+      component: `${memberTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
       // You can use the values in this context in
       // our page layout component
       context: { id: node.id },
