@@ -1,17 +1,18 @@
 import * as React from 'react'
+import { useRef } from 'react'
 import TeamMemberCard from '../teamMemberCard/teamMemberCard'
 import * as styles from './teamMemberList.module.css'
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add(styles.show)
-    }
-  })
-})
-
 export default function TeamMemberList(memberList: any) {
   React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(styles.show)
+        }
+      })
+    })
+
     let observedElements = document.querySelectorAll(
       '[data-observer="observe"]'
     )
