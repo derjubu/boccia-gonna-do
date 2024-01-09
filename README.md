@@ -1,6 +1,6 @@
 <h1 align="center">
   Boccia gonna do?
 </h1>
-[Visit us](https://boccia-gonna-do.netlify.app/contact)
+<a href="https://boccia-gonna-do.netlify.app/">Visit us</a>
 
 Created with Gatsby
